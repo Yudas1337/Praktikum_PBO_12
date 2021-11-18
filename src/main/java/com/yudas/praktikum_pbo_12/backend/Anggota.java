@@ -149,4 +149,20 @@ public class Anggota {
         DBHelper.executeQuery(SQL);
     }
 
+    public String cariAnggota(int idAnggota) {
+
+        String namaAnggota = "0";
+        ResultSet rs = DBHelper.selectQuery("SELECT * FROM anggota WHERE idanggota =  '" + idAnggota + "'");
+
+        try {
+            while (rs.next()) {
+                namaAnggota = rs.getString("nama");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return namaAnggota;
+    }
+
 }

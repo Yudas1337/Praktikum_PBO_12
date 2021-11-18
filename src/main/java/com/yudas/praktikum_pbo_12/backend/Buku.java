@@ -193,4 +193,20 @@ public class Buku {
         DBHelper.executeQuery(SQL);
     }
 
+    public String cariBuku(int idBuku) {
+
+        String namaBuku = "0";
+        ResultSet rs = DBHelper.selectQuery("SELECT * FROM buku WHERE idbuku =  '" + idBuku + "'");
+
+        try {
+            while (rs.next()) {
+                namaBuku = rs.getString("judul");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return namaBuku;
+    }
+
 }
