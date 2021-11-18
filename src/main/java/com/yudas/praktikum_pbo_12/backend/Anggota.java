@@ -18,7 +18,7 @@ public class Anggota {
     private String alamat;
     private String telepon;
 
-    public int getIdanggota() {
+    public int getIdAnggota() {
         return this.idanggota;
     }
 
@@ -127,7 +127,7 @@ public class Anggota {
     }
 
     public void save() {
-        if (getById(idanggota).getIdanggota() == 0) {
+        if (getById(idanggota).getIdAnggota() == 0) {
             String SQL = "INSERT INTO anggota (nama, alamat, telepon) VALUES("
                     + "'" + this.getNama() + "',"
                     + "'" + this.getAlamat() + "',"
@@ -139,13 +139,13 @@ public class Anggota {
                     + "nama = '" + this.getNama() + "',"
                     + "alamat = '" + this.getAlamat() + "',"
                     + "telepon = '" + this.getTelepon() + "'"
-                    + "WHERE idanggota = '" + this.getIdanggota() + "'";
+                    + "WHERE idanggota = '" + this.getIdAnggota() + "'";
             DBHelper.executeQuery(SQL);
         }
     }
 
     public void delete() {
-        String SQL = "DELETE FROM anggota WHERE idanggota = '" + this.getIdanggota() + "'";
+        String SQL = "DELETE FROM anggota WHERE idanggota = '" + this.getIdAnggota() + "'";
         DBHelper.executeQuery(SQL);
     }
 
