@@ -97,27 +97,10 @@ public class FrmAnggota extends javax.swing.JFrame {
 
         nama.setText("Nama Anggota");
 
-        txtNama.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNamaActionPerformed(evt);
-            }
-        });
-
         alamat.setText("Alamat Anggota");
 
         telepon.setText("Telepon Anggota");
 
-        txtAlamat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAlamatActionPerformed(evt);
-            }
-        });
-
-        txtTelepon.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTeleponActionPerformed(evt);
-            }
-        });
         txtTelepon.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTeleponKeyTyped(evt);
@@ -142,12 +125,6 @@ public class FrmAnggota extends javax.swing.JFrame {
         btnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHapusActionPerformed(evt);
-            }
-        });
-
-        txtCari.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCariActionPerformed(evt);
             }
         });
 
@@ -248,18 +225,6 @@ public class FrmAnggota extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNamaActionPerformed
-
-    private void txtAlamatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAlamatActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAlamatActionPerformed
-
-    private void txtTeleponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTeleponActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTeleponActionPerformed
-
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
         Anggota kat = new Anggota();
@@ -287,10 +252,6 @@ public class FrmAnggota extends javax.swing.JFrame {
         kosongkanForm();
         tampilkanData();
     }//GEN-LAST:event_btnHapusActionPerformed
-
-    private void txtCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCariActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCariActionPerformed
 
     private void btnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariActionPerformed
         // TODO add your handling code here:

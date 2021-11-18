@@ -89,27 +89,10 @@ public class FrmKategori extends javax.swing.JFrame {
         id_kategori.setText("ID Kategori");
 
         txtIdKategori.setEditable(false);
-        txtIdKategori.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIdKategoriActionPerformed(evt);
-            }
-        });
 
         nama_kategori.setText("Nama Kategori");
 
-        txtNama.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNamaActionPerformed(evt);
-            }
-        });
-
         keterangan.setText("Keterangan");
-
-        txtKeterangan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtKeteranganActionPerformed(evt);
-            }
-        });
 
         btnSimpan.setText("Simpan");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
@@ -129,12 +112,6 @@ public class FrmKategori extends javax.swing.JFrame {
         btnHapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHapusActionPerformed(evt);
-            }
-        });
-
-        txtCari.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCariActionPerformed(evt);
             }
         });
 
@@ -227,18 +204,6 @@ public class FrmKategori extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtIdKategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdKategoriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIdKategoriActionPerformed
-
-    private void txtNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNamaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNamaActionPerformed
-
-    private void txtKeteranganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKeteranganActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtKeteranganActionPerformed
-
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
         Kategori kat = new Kategori();
@@ -265,10 +230,6 @@ public class FrmKategori extends javax.swing.JFrame {
         kosongkanForm();
         tampilkanData();
     }//GEN-LAST:event_btnHapusActionPerformed
-
-    private void txtCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCariActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCariActionPerformed
 
     private void btnCariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCariActionPerformed
         // TODO add your handling code here:

@@ -133,4 +133,8 @@ public class Kategori {
         DBHelper.executeQuery(SQL);
     }
 
+    public String toString() {
+        return nama;
+    }
+
 }
