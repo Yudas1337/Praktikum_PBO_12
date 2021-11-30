@@ -126,7 +126,8 @@ public class Peminjaman {
                 + "b.penulis AS penulis"
                 + " FROM peminjaman p "
                 + "JOIN buku b ON p.idbuku = b.idbuku "
-                + "JOIN anggota a ON p.idanggota = a.idanggota");
+                + "JOIN anggota a ON p.idanggota = a.idanggota "
+                + "ORDER BY p.idpeminjaman ASC");
 
         try {
             while (rs.next()) {

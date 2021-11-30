@@ -26,7 +26,7 @@ public class FrmPeminjaman extends javax.swing.JFrame {
     }
 
     public void tampilkanData() {
-        String[] kolom = {"ID", "ID Anggota", "ID Buku", "Tanggal Pinjam", "Tanggal Kembali"};
+        String[] kolom = {"ID", "Nama Anggota", "Judul Buku", "Tanggal Pinjam", "Tanggal Kembali"};
         ArrayList<Peminjaman> list = new Peminjaman().getAll();
         Object rowData[] = new Object[5];
 
@@ -34,8 +34,8 @@ public class FrmPeminjaman extends javax.swing.JFrame {
 
         for (int i = 0; i < list.size(); i++) {
             rowData[0] = list.get(i).getIdPeminjaman();
-            rowData[1] = list.get(i).getAnggota().getIdAnggota();
-            rowData[2] = list.get(i).getBuku().getIdBuku();
+            rowData[1] = list.get(i).getAnggota().getNama();
+            rowData[2] = list.get(i).getBuku().getJudul();
             rowData[3] = list.get(i).getTanggalPinjam();
             rowData[4] = list.get(i).getTanggalKembali();
 
@@ -127,9 +127,9 @@ public class FrmPeminjaman extends javax.swing.JFrame {
 
         tanggal_kembali.setText("Tanggal kembali");
 
-        label_format_1.setText("Format: YYY/MM/DD");
+        label_format_1.setText("Format: YYYY/MM/DD");
 
-        label_format_2.setText("Format: YYY/MM/DD");
+        label_format_2.setText("Format: YYYY/MM/DD");
 
         btnSimpan.setText("Simpan");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
@@ -198,8 +198,7 @@ public class FrmPeminjaman extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(btnCariBuku)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(labelBuku)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                        .addComponent(labelBuku)))
                                 .addGap(85, 85, 85))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)

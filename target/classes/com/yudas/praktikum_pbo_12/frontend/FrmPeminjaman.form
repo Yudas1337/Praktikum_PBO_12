@@ -51,6 +51,7 @@
                                       <Component id="btnCariBuku" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="labelBuku" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
@@ -217,12 +218,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="label_format_1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Format: YYYY/MM/DD"/>
+        <Property name="text" type="java.lang.String" value="Format: YYY/MM/DD"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="label_format_2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Format: YYYY/MM/DD"/>
+        <Property name="text" type="java.lang.String" value="Format: YYY/MM/DD"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnSimpan">
